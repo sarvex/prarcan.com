@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@modular-forms/qwik':
-    specifier: 0.23.1
-    version: 0.23.1(@builder.io/qwik-city@1.5.5)(@builder.io/qwik@1.5.5)
+    specifier: 0.24.0
+    version: 0.24.0(@builder.io/qwik-city@1.5.5)(@builder.io/qwik@1.5.5)
   '@qwikest/icons':
     specifier: 0.0.13
     version: 0.0.13(@builder.io/qwik@1.5.5)
@@ -2616,14 +2616,15 @@ packages:
       react: 18.2.0
     dev: true
 
-  /@modular-forms/qwik@0.23.1(@builder.io/qwik-city@1.5.5)(@builder.io/qwik@1.5.5):
-    resolution: {integrity: sha512-oiXMdbH0HNotc9LMUwoEwZSJkY7/SObyQCgAZHsAPIQOyQrDhG2W8rEJVy0zFtSOCxk6NZjLiMcXfcI5glKU8A==}
+  /@modular-forms/qwik@0.24.0(@builder.io/qwik-city@1.5.5)(@builder.io/qwik@1.5.5):
+    resolution: {integrity: sha512-mF+cOw2lmiEjCf7odYW65d1gxp5ozqAbDfX5Z6yAt0wE7wsRHBZgi0YoXAh63vRCEcR5UMG/9kdTXj3KCjxhug==}
     peerDependencies:
       '@builder.io/qwik': ^1.4.0
       '@builder.io/qwik-city': ^1.4.0
     dependencies:
       '@builder.io/qwik': 1.5.5(@types/node@20.12.12)(undici@6.18.1)
       '@builder.io/qwik-city': 1.5.5(@types/node@20.12.12)
+      decode-formdata: 0.7.2
     dev: false
 
   /@ndelangen/get-tarball@3.0.9:
@@ -4181,6 +4182,7 @@ packages:
 
   /@types/unist@2.0.6:
     resolution: {integrity: sha512-PBjIUxZHOuj0R15/xuwJYjFi+KZdNFrehocChv4g5hu6aFroHue8m0lBP0POdK2nKzbw0cgV1mws8+V/JAcEkQ==}
+    requiresBuild: true
 
   /@types/unist@3.0.0:
     resolution: {integrity: sha512-MFETx3tbTjE7Uk6vvnWINA/1iJ7LuMdO4fcq8UfF0pRbj01aGLduVvQcRyswuACJdpnHgg8E3rQLhaRdNEJS0w==}
@@ -5110,15 +5112,18 @@ packages:
 
   /character-entities-html4@2.1.0:
     resolution: {integrity: sha512-1v7fgQRj6hnSwFpq1Eu0ynr/CDEw0rXo2B61qXrLNdHZmPKgb7fqS1a2JwF0rISo9q77jDI8VMEHoApn8qDoZA==}
+    requiresBuild: true
 
   /character-entities-legacy@3.0.0:
     resolution: {integrity: sha512-RpPp0asT/6ufRm//AJVwpViZbGM/MkjQFxJccQRHmISF/22NBtsHqAWmL+/pmkPWoIUJdWyeVleTl1wydHATVQ==}
+    requiresBuild: true
 
   /character-entities@2.0.2:
     resolution: {integrity: sha512-shx7oQ0Awen/BRIdkjkvz54PnEEI/EjwXDSIZp86/KKdbafHh1Df/RYGBhn4hbe2+uKC9FnT5UCEdyPz3ai9hQ==}
 
   /character-reference-invalid@2.0.1:
     resolution: {integrity: sha512-iBZ4F4wRbyORVsu0jPV7gXkOsGYjGHPmAyv+HiHG8gi5PtC9KI2j1+v8/tlibRvjoWX027ypmG/n0HtO5t7unw==}
+    requiresBuild: true
 
   /check-error@1.0.3:
     resolution: {integrity: sha512-iKEoDYaRmd1mxM90a2OEfWhjsjPpYPuQ+lMYsoxB126+t8fw7ySEO48nmDg5COTjxDI65/Y2OWpeEHk3ZOe8zg==}
@@ -5459,6 +5464,10 @@ packages:
         optional: true
     dependencies:
       ms: 2.1.2
+
+  /decode-formdata@0.7.2:
+    resolution: {integrity: sha512-TaUPp8jmomdGWNind2R9MBIgZfYM4XSTebC+5d28dDx4k4BuZ5fiDvCutY0XQd2UJxrAHWq6CGXLmmbP5Ty8Vw==}
+    dev: false
 
   /decode-named-character-reference@1.0.2:
     resolution: {integrity: sha512-O8x12RzrUF8xyVcY0KJowWsmaJxQbmy0/EtnNtHRpsOcT7dFk5W598coHqBVpmWo1oQQfsCqfCmkZN5DJrZVdg==}
@@ -7218,9 +7227,11 @@ packages:
 
   /is-alphabetical@2.0.1:
     resolution: {integrity: sha512-FWyyY60MeTNyeSRpkM2Iry0G9hpr7/9kD40mD/cGQEuilcZYS4okz8SN2Q6rLCJ8gbCt6fN+rC+6tMGS99LaxQ==}
+    requiresBuild: true
 
   /is-alphanumerical@2.0.1:
     resolution: {integrity: sha512-hmbYhX/9MUMF5uh7tOXyK/n0ZvWpad5caBA17GsC6vyuCqaWliRG5K1qS9inmUhEMaOBIW7/whAnSwveW/LtZw==}
+    requiresBuild: true
     dependencies:
       is-alphabetical: 2.0.1
       is-decimal: 2.0.1
@@ -7296,6 +7307,7 @@ packages:
 
   /is-decimal@2.0.1:
     resolution: {integrity: sha512-AAB9hiomQs5DXWcRB1rqsxGUstbRroFOPPVAomNk/3XHR5JyEZChOyTWe2oayKnsSsr/kcGqF+z6yuH6HHpN0A==}
+    requiresBuild: true
 
   /is-deflate@1.0.0:
     resolution: {integrity: sha512-YDoFpuZWu1VRXlsnlYMzKyVRITXj7Ej/V9gXQ2/pAe7X1J7M/RNOqaIYi6qUn+B7nGyB9pDXrv02dsB58d2ZAQ==}
@@ -7338,6 +7350,7 @@ packages:
 
   /is-hexadecimal@2.0.1:
     resolution: {integrity: sha512-DgZQp241c8oO6cA1SbTEWiXeoxV42vlcJxgH+B3hi1AiqqKruZR3ZGF8In3fj4+/y/7rHvlOZLZtgJ/4ttYGZg==}
+    requiresBuild: true
 
   /is-interactive@1.0.0:
     resolution: {integrity: sha512-2HvIEKRoqS62guEC+qBjpvRubdX910WCMuJTZ+I9yvqKU2/12eSL549HMwtabb4oupdj2sMP50k+XJfB/8JE6w==}
